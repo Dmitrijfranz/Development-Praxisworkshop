@@ -67,7 +67,7 @@ namespace Development_Praxisworkshop.Pages
 
             
             //var files = graphClient.Drive.Root.Request().GetAsync().Result;
-            _files = _graphServiceClient.Drive.Root.Children.Request().GetAsync().Result;
+            _files = _graphServiceClient.Me.Drive.Root.Children.Request().GetAsync().Result;
 
         }
 
